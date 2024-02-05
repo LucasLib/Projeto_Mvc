@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SelesWebMvc.Models;
+using SelesWebMvc.Models.ViewsModel;
 using System.Diagnostics;
 
 namespace SelesWebMvc.Controllers

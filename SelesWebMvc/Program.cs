@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using SelesWebMvc.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<SelesWebMvcContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("SelesWebMvcContext") ?? throw new InvalidOperationException("Connection string 'SelesWebMvcContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

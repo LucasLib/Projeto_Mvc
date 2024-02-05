@@ -1,4 +1,4 @@
-namespace SelesWebMvc.Models
+namespace SelesWebMvc.Models.ViewsModel
 {
     public class ErrorViewModel
     {
